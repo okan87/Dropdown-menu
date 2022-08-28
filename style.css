@@ -4,8 +4,7 @@ body {
   font-family: Roboto;
   font-size: 1.1rem;
 }
-
-.left-menu {
+.yatay__menu {
   width: 20vw;
   height: 100vh;
   background-color: rgb(255, 179, 56);
@@ -14,35 +13,28 @@ body {
   left: -17vw;
   transition: left 1s;
 }
-
-.left-menu:hover {
+.yatay__menu:hover {
   left: 0;
 }
-
-.left-menu .title {
+.yatay__menu:hover .fa-chevron-right {
+  transform: rotate(180deg);
+}
+.top {
   position: relative;
   background-color: rgb(184, 113, 0);
   padding: 0.3rem;
 }
-
-.left-menu .title i {
-  position: absolute;
-  right: 0.5rem;
-  transition: transform 1s;
+.fa-chevron-right {
+  float: right;
+  transition: all 1s;
 }
-.left-menu:hover i {
-  transform: rotate(180deg);
-}
-
-.left-menu ul {
+.bottom li {
   list-style-type: none;
-  margin: 0px;
-  padding: 0.6rem;
+  margin-top: 1rem;
 }
-
-.left-menu ul a {
-  display: block;
+.bottom li a {
   text-decoration: none;
+  margin-top: 1rem;
+  padding: 1rem;
   color: white;
-  padding: 0.7rem;
 }
